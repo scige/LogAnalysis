@@ -5,3 +5,36 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+LogData.create(
+    :server_name => "Demo",
+    :server_spec => "10.249.7.16:19092",
+    :log_time => "2012-09-23 15:47:00",
+    :log_level => "INFO",
+    :req_url => "http://www.meishichina.com",
+    :req_site => "www.meishichina.com",
+    :stat_behaviour => 20,
+    :stat_search => 60
+)
+
+LogData.create(
+    :server_name => "Demo",
+    :server_spec => "10.249.7.16:19092",
+    :log_time => "2012-09-23 15:48:00",
+    :log_level => "INFO",
+    :req_url => "http://www.sina.com.cn",
+    :req_site => "www.sina.com.cn",
+    :stat_behaviour => 20,
+    :stat_search => 60
+)
+
+LogData.create(
+    :server_name => "Demo",
+    :server_spec => "10.249.7.16:19092",
+    :log_time => "2012-09-23 15:49:00",
+    :log_level => "INFO",
+    :req_url => "http://www.chinaz.com",
+    :req_site => "www.chinaz.com",
+    :stat_behaviour => 20,
+    :stat_search => 60
+)
