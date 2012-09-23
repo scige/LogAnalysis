@@ -38,3 +38,14 @@ LogData.create(
     :stat_behaviour => 20,
     :stat_search => 60
 )
+
+LogData.create(
+    :server_name => "SBS",
+    :server_spec => "10.249.88.1:19092",
+    :log_time => "2012-09-23 19:32:00",
+    :log_level => "INFO",
+    :req_url => "http://www.meishichina.com",
+    :req_site => "www.meishichina.com",
+    :stat_behaviour => 20,
+    :stat_search => 60
+)
