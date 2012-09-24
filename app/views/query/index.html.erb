@@ -1,12 +1,13 @@
-
-<table>
-    <% @log_data_array.each do |log_data| %>
-        <tr>
-            <td><%= log_data.server_name + " " + log_data.log_time.to_s %></td>
-            <td><b><%= link_to 'show', 
-                               {:controller => "query", 
-                                :action => "show", 
-                                :id => log_data.id} %></b></td>
-        </tr>
-    <% end %>
-</table>
+<div class="content">
+    <table>
+        <% @log_data_array.each do |log_data| %>
+            <tr>
+                <td><%= log_data.server_name + " " + log_data.log_time.to_s %></td>
+                <td><b><%= link_to 'show', 
+                                   {:controller => "query", 
+                                    :action => "show", 
+                                    :id => log_data.id} %></b></td>
+            </tr>
+        <% end %>
+    </table>
+</div>
