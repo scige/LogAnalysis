@@ -20,8 +20,8 @@ test:
 
 production:
   adapter: mysql
-  database: log_analysis_demo
+  database: log_analysis_test
   host: localhost
-  username: root
-  password:
+  username: log_user
+  password: 123456
   encoding: utf8
