@@ -1,7 +1,23 @@
 <div class="query">
     <form action="/query/index" method="post">
-        url: 
+        <b>url:</b>
         <input name="url" type="text" size="60" />
         <input type="submit" />
     </form>
+</div>
+
+<div class="notice">
+    <p>OR</p>
+</div>
+
+<div class="query">
+    <form action="/query/site" method="post">
+        <b>site:</b>
+        <input name="site" type="text" size="60" />
+        <input type="submit" />
+    </form>
+</div>
+
+<div class="notice">
+    <p><%= flash[:notice] %></p>
 </div>

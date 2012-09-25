@@ -1,18 +1,19 @@
 <div class="query">
-    <form action="/query/index" method="post">
-        <b>url:</b>
-        <input name="url" type="text" size="60" />
+    <form action="/query/site" method="post">
+        <b>site:</b>
+        <input name="site" type="text" size="60" />
         <input type="submit" />
     </form>
 </div>
 
 <div class="content">
-    <b><%= @req_originalUrl %></b>
+    <b><%= @req_site %></b>
     <table>
         <% @log_data_array.each do |log_data| %>
             <tr>
                 <td><%= log_data.server_name %></td>
                 <td><%= log_data.log_time.to_s %></td>
+                <td><%= log_data.req_originalUrl %></td>
                 <td><b><%= link_to 'show', 
                                    {:controller => "query", 
                                     :action => "show", 
