@@ -18,6 +18,9 @@ class CreateLogData < ActiveRecord::Migration
             t.integer :stat_behaviour_size
             t.integer :stat_search_size
             t.integer :stat_rec_hot_size
+            t.integer :stat_web_hot_size
+            t.integer :stat_convert_item_size
+            t.integer :stat_none_item_size
             t.integer :stat_before_filter_size
             t.integer :stat_filter_sum_in_phase_0
             t.integer :stat_filter_sum_in_phase_1
