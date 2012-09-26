@@ -11,126 +11,169 @@
         <tr>
             <td><b>server_name:</b></td>
             <td><%= @log_data.server_name %></td>
+            <td>服务器环境</td>
         </tr>
     
         <tr>
             <td><b>server_spec:</b></td>
             <td><%= @log_data.server_spec %></td>
+            <td>服务器Spec</td>
         </tr>
     
         <tr>
             <td><b>log_time:</b></td>
             <td><%= @log_data.log_time %></td>
+            <td>请求发生时间</td>
         </tr>
     
         <tr>
             <td><b>log_level:</b></td>
             <td><%= @log_data.log_level %></td>
+            <td>日志级别</td>
         </tr>
     
         <tr>
             <td><b>req_originalUrl:</b></td>
             <td><%= @log_data.req_originalUrl %></td>
+            <td>请求url</td>
         </tr>
     
         <tr>
             <td><b>req_site:</b></td>
             <td><%= @log_data.req_site %></td>
+            <td>请求site</td>
         </tr>
     
         <tr>
             <td><b>req_searchKey:</b></td>
             <td><%= @log_data.req_searchKey %></td>
+            <td>搜索关键字</td>
         </tr>
     
         <tr>
             <td><b>req_searchType:</b></td>
             <td><%= @log_data.req_searchType %></td>
+            <td>搜索关键字类型</td>
         </tr>
     
         <tr>
             <td><b>req_enableThumbnail:</b></td>
             <td><%= @log_data.req_enableThumbnail %></td>
+            <td>是否图文推荐</td>
         </tr>
     
         <tr>
             <td><b>req_isItemDomain:</b></td>
             <td><%= @log_data.req_isItemDomain %></td>
+            <td>是否item站点</td>
         </tr>
     
         <tr>
             <td><b>req_bucketId:</b></td>
             <td><%= @log_data.req_bucketId %></td>
+            <td>bucket id</td>
         </tr>
     
         <tr>
             <td><b>stat_behaviour_size:</b></td>
             <td><%= @log_data.stat_behaviour_size %></td>
+            <td>行为推荐候选数目</td>
         </tr>
     
         <tr>
             <td><b>stat_search_size:</b></td>
             <td><%= @log_data.stat_search_size %></td>
+            <td>云搜索候选数目</td>
         </tr>
     
         <tr>
             <td><b>stat_rec_hot_size:</b></td>
             <td><%= @log_data.stat_rec_hot_size %></td>
+            <td>推荐热帖数目</td>
+        </tr>
+
+        <tr>
+            <td><b>stat_web_hot_size:</b></td>
+            <td><%= @log_data.stat_web_hot_size %></td>
+            <td>站内热帖数目</td>
+        </tr>
+
+        <tr>
+            <td><b>stat_convert_item_size:</b></td>
+            <td><%= @log_data.stat_convert_item_size %></td>
+            <td>item转换数目</td>
+        </tr>
+
+        <tr>
+            <td><b>stat_none_item_size:</b></td>
+            <td><%= @log_data.stat_none_item_size %></td>
+            <td>非item数目</td>
         </tr>
     
         <tr>
             <td><b>stat_before_filter_size:</b></td>
             <td><%= @log_data.stat_before_filter_size %></td>
+            <td>过滤前结果数目</td>
         </tr>
     
         <tr>
             <td><b>stat_filter_sum_in_phase_0:</b></td>
             <td><%= @log_data.stat_filter_sum_in_phase_0 %></td>
+            <td>单个url过滤数目</td>
         </tr>
     
         <tr>
             <td><b>stat_filter_sum_in_phase_1:</b></td>
             <td><%= @log_data.stat_filter_sum_in_phase_1 %></td>
+            <td>多个url去重数目</td>
         </tr>
     
         <tr>
             <td><b>stat_filter_sum_in_phase_2:</b></td>
             <td><%= @log_data.stat_filter_sum_in_phase_2 %></td>
+            <td>单个title字符过滤数目</td>
         </tr>
     
         <tr>
             <td><b>stat_filter_sum_in_phase_3:</b></td>
             <td><%= @log_data.stat_filter_sum_in_phase_3 %></td>
+            <td>单个title词过滤数目</td>
         </tr>
     
         <tr>
             <td><b>stat_filter_sum_in_phase_4:</b></td>
             <td><%= @log_data.stat_filter_sum_in_phase_4 %></td>
+            <td>多个title过滤数目</td>
         </tr>
     
         <tr>
             <td><b>stat_filter_sum_in_phase_5:</b></td>
             <td><%= @log_data.stat_filter_sum_in_phase_5 %></td>
+            <td>必要要件过滤数目</td>
         </tr>
     
         <tr>
             <td><b>stat_filter_sum_size:</b></td>
             <td><%= @log_data.stat_filter_sum_size %></td>
+            <td>过滤掉结果数目</td>
         </tr>
     
         <tr>
             <td><b>stat_after_filter_size:</b></td>
             <td><%= @log_data.stat_after_filter_size %></td>
+            <td>过滤后结果数目</td>
         </tr>
     
         <tr>
             <td><b>stat_return_size:</b></td>
             <td><%= @log_data.stat_return_size %></td>
+            <td>候选结果数目</td>
         </tr>
     
         <tr>
             <td><b>stat_select_size:</b></td>
             <td><%= @log_data.stat_select_size %></td>
+            <td>返回结果数目</td>
         </tr>
     </table>
 </div>
