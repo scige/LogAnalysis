@@ -1,3 +1,5 @@
+# coding: utf-8
+
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
@@ -46,6 +48,18 @@ LogData.create(
     :log_level => "INFO",
     :req_originalUrl => "http://www.meishichina.com",
     :req_site => "www.meishichina.com",
+    :stat_behaviour_size => 20,
+    :stat_search_size => 60
+)
+
+LogData.create(
+    :server_name => "Demo",
+    :server_spec => "10.249.7.16:19092",
+    :log_time => "2012-09-26 14:00:00",
+    :log_level => "INFO",
+    :req_originalUrl => "http://www.sina.com.cn",
+    :req_site => "www.sina.com.cn",
+    :req_searchKey => "新浪",
     :stat_behaviour_size => 20,
     :stat_search_size => 60
 )
