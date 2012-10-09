@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120923072724) do
+ActiveRecord::Schema.define(:version => 20121009065307) do
 
   create_table "log_data", :force => true do |t|
     t.string   "server_name"
@@ -45,5 +45,9 @@ ActiveRecord::Schema.define(:version => 20120923072724) do
     t.datetime "created_at",                 :null => false
     t.datetime "updated_at",                 :null => false
   end
+
+  add_index "log_data", ["log_time"], :name => "index_log_data_on_log_time"
+  add_index "log_data", ["req_originalUrl"], :name => "index_log_data_on_req_originalUrl"
+  add_index "log_data", ["req_site"], :name => "index_log_data_on_req_site"
 
 end
