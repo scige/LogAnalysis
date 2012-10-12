@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121009065307) do
+ActiveRecord::Schema.define(:version => 20121011104958) do
 
   create_table "log_data", :force => true do |t|
     t.string   "server_name"
@@ -40,10 +40,13 @@ ActiveRecord::Schema.define(:version => 20121009065307) do
     t.integer  "stat_filter_sum_in_phase_5"
     t.integer  "stat_filter_sum_size"
     t.integer  "stat_after_filter_size"
-    t.integer  "stat_return_size"
+    t.integer  "stat_candidate_size"
     t.integer  "stat_select_size"
     t.datetime "created_at",                 :null => false
     t.datetime "updated_at",                 :null => false
+    t.string   "req_ip"
+    t.boolean  "stat_in_cache"
+    t.integer  "stat_thumbnail_size"
   end
 
   add_index "log_data", ["log_time"], :name => "index_log_data_on_log_time"

@@ -1,0 +1,545 @@
+[2012-10-10 10:00:17] INFO  WEBrick 1.3.1
+[2012-10-10 10:00:17] INFO  ruby 1.9.3 (2012-04-20) [x86_64-linux]
+[2012-10-10 10:00:17] INFO  WEBrick::HTTPServer#start: pid=28640 port=80
+[2012-10-10 10:01:04] INFO  going to shutdown ...
+[2012-10-10 10:01:04] INFO  WEBrick::HTTPServer#start done.
+=> Booting WEBrick
+=> Rails 3.2.6 application starting in production on http://0.0.0.0:80
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+
+
+Started GET "/" for 10.32.164.41 at 2012-10-10 10:00:42 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 48ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>LogAnalysis</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__457863259076708906_11920900'
+
+
+
+
+Started GET "/" for 10.32.164.41 at 2012-10-10 10:00:49 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>LogAnalysis</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__457863259076708906_11920900'
+
+
+Exiting
+[2012-10-10 10:03:37] INFO  WEBrick 1.3.1
+[2012-10-10 10:03:37] INFO  ruby 1.9.3 (2012-04-20) [x86_64-linux]
+[2012-10-10 10:03:37] INFO  WEBrick::HTTPServer#start: pid=30045 port=80
+[2012-10-10 10:05:35] INFO  going to shutdown ...
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:24:in `shutdown': undefined method `shutdown' for nil:NilClass (NoMethodError)
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/server.rb:259:in `block in start'
+	from /usr/local/lib/ruby/1.9.1/webrick/server.rb:121:in `call'
+	from /usr/local/lib/ruby/1.9.1/webrick/server.rb:121:in `join'
+	from /usr/local/lib/ruby/1.9.1/webrick/server.rb:121:in `block (2 levels) in start'
+	from /usr/local/lib/ruby/1.9.1/webrick/server.rb:121:in `each'
+	from /usr/local/lib/ruby/1.9.1/webrick/server.rb:121:in `block in start'
+	from /usr/local/lib/ruby/1.9.1/webrick/server.rb:22:in `start'
+	from /usr/local/lib/ruby/1.9.1/webrick/server.rb:89:in `start'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:13:in `run'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/server.rb:265:in `start'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.6/lib/rails/commands/server.rb:70:in `start'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.6/lib/rails/commands.rb:55:in `block in <top (required)>'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.6/lib/rails/commands.rb:50:in `tap'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.6/lib/rails/commands.rb:50:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+=> Booting WEBrick
+=> Rails 3.2.6 application starting in production on http://0.0.0.0:80
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+
+
+Started GET "/" for 10.32.164.41 at 2012-10-10 10:03:42 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query/index" for 10.32.164.41 at 2012-10-10 10:03:57 +0800
+Processing by QueryController#index as HTML
+  Parameters: {"url"=>"http://www.meishichina.com"}
+WARNING: Can't verify CSRF token authenticity
+Redirected to http://10.250.13.10/
+Completed 302 Found in 83ms (ActiveRecord: 27.1ms)
+
+
+Started GET "/" for 10.32.164.41 at 2012-10-10 10:03:58 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query/index" for 10.32.164.41 at 2012-10-10 10:04:04 +0800
+Processing by QueryController#index as HTML
+  Parameters: {"url"=>"http://www.meishichina.com/"}
+WARNING: Can't verify CSRF token authenticity
+  Rendered query/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 94ms (Views: 8.8ms | ActiveRecord: 46.3ms)
+Exiting
+[2012-10-10 10:05:46] INFO  WEBrick 1.3.1
+[2012-10-10 10:05:46] INFO  ruby 1.9.3 (2012-04-20) [x86_64-linux]
+[2012-10-10 10:05:46] INFO  WEBrick::HTTPServer#start: pid=30756 port=80
+[2012-10-10 10:10:53] INFO  going to shutdown ...
+[2012-10-10 10:10:53] INFO  WEBrick::HTTPServer#start done.
+=> Booting WEBrick
+=> Rails 3.2.6 application starting in production on http://0.0.0.0:80
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+
+
+Started GET "/" for 10.32.164.41 at 2012-10-10 10:05:48 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query/index" for 10.32.164.41 at 2012-10-10 10:05:58 +0800
+Processing by QueryController#index as HTML
+  Parameters: {"url"=>"http://www.meishichina.com"}
+WARNING: Can't verify CSRF token authenticity
+Redirected to http://10.250.13.10/
+Completed 302 Found in 15867ms (ActiveRecord: 15795.9ms)
+
+
+Started GET "/" for 10.32.164.41 at 2012-10-10 10:06:14 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query/index" for 10.32.164.41 at 2012-10-10 10:10:19 +0800
+Processing by QueryController#index as HTML
+  Parameters: {"url"=>"http://www.djdlhq.com/"}
+WARNING: Can't verify CSRF token authenticity
+  Rendered query/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 352ms (Views: 9.6ms | ActiveRecord: 303.9ms)
+
+
+Started GET "/query/show/15220933" for 10.32.164.41 at 2012-10-10 10:10:29 +0800
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"15220933"}
+  Rendered query/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.4ms)
+Exiting
+[2012-10-10 10:11:29] INFO  WEBrick 1.3.1
+[2012-10-10 10:11:29] INFO  ruby 1.9.3 (2012-04-20) [x86_64-linux]
+[2012-10-10 10:11:29] INFO  WEBrick::HTTPServer#start: pid=1365 port=80
+[2012-10-10 10:11:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-10 10:11:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-10 10:11:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-10 10:12:04] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+=> Booting WEBrick
+=> Rails 3.2.6 application starting in production on http://0.0.0.0:80
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+
+
+Started POST "/query/index" for 10.32.164.41 at 2012-10-10 10:11:37 +0800
+Processing by QueryController#index as HTML
+  Parameters: {"url"=>"http://www.djdlhq.com/"}
+WARNING: Can't verify CSRF token authenticity
+  Rendered query/index.html.erb within layouts/application (255.1ms)
+Completed 200 OK in 829ms (Views: 282.3ms | ActiveRecord: 430.2ms)
+
+
+Started GET "/query/show/14018740" for 10.32.164.41 at 2012-10-10 10:11:47 +0800
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"14018740"}
+  Rendered query/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/query/show/14018740" for 10.32.164.41 at 2012-10-10 10:12:04 +0800
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"14018740"}
+  Rendered query/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/query/show/14051884" for 10.32.164.41 at 2012-10-10 10:12:19 +0800
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"14051884"}
+  Rendered query/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/query/show/14083250" for 10.32.164.41 at 2012-10-10 10:12:23 +0800
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"14083250"}
+  Rendered query/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/query/site" for 10.32.164.41 at 2012-10-10 10:14:19 +0800
+Processing by QueryController#site as HTML
+  Parameters: {"site"=>"djdlhq.com"}
+WARNING: Can't verify CSRF token authenticity
+  Rendered query/site.html.erb within layouts/application (1651.0ms)
+Completed 200 OK in 2515ms (Views: 1653.2ms | ActiveRecord: 589.3ms)
+
+
+Started GET "/" for 10.32.164.72 at 2012-10-10 10:16:11 +0800
+Processing by HomeController#index as */*
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query/index" for 10.32.164.72 at 2012-10-10 10:16:20 +0800
+Processing by QueryController#index as HTML
+  Parameters: {"url"=>"http://www.xu5188.com/ml/zh/rdgz/rdgz1-1.html"}
+WARNING: Can't verify CSRF token authenticity
+  Rendered query/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 10ms (Views: 5.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/query/show/14957100" for 10.32.164.72 at 2012-10-10 10:16:46 +0800
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"14957100"}
+  Rendered query/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.32.164.110 at 2012-10-10 11:02:36 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query/site" for 10.32.164.41 at 2012-10-10 11:17:46 +0800
+Processing by QueryController#site as HTML
+  Parameters: {"site"=>"admin5.com"}
+WARNING: Can't verify CSRF token authenticity
+  Rendered query/site.html.erb within layouts/application (269.0ms)
+Completed 200 OK in 802ms (Views: 270.8ms | ActiveRecord: 491.9ms)
+
+
+Started GET "/query/show/14732358" for 10.32.164.41 at 2012-10-10 11:22:04 +0800
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"14732358"}
+  Rendered query/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/query/show/14732354" for 10.32.164.41 at 2012-10-10 11:22:11 +0800
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"14732354"}
+  Rendered query/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/query/show/14732364" for 10.32.164.41 at 2012-10-10 11:22:22 +0800
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"14732364"}
+  Rendered query/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/query/show/14732359" for 10.32.164.41 at 2012-10-10 11:22:28 +0800
+Processing by QueryController#show as HTML
+  Parameters: {"id"=>"14732359"}
+  Rendered query/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.32.179.48 at 2012-10-10 15:09:43 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.32.179.11 at 2012-10-10 15:16:19 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.32.179.110 at 2012-10-10 16:10:51 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query/index" for 10.32.179.110 at 2012-10-10 16:10:53 +0800
+Processing by QueryController#index as HTML
+  Parameters: {"url"=>"http://tu.7k7k.com/games/scene/531949.html"}
+WARNING: Can't verify CSRF token authenticity
+Redirected to http://10.250.13.10/
+Completed 302 Found in 2ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.32.179.110 at 2012-10-10 16:10:53 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query/index" for 10.32.179.110 at 2012-10-10 16:17:49 +0800
+Processing by QueryController#index as HTML
+  Parameters: {"url"=>"http://news.7k7k.com/hot/xin/w/532022.html"}
+WARNING: Can't verify CSRF token authenticity
+Redirected to http://10.250.13.10/
+Completed 302 Found in 2ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 10.32.179.110 at 2012-10-10 16:17:49 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query/index" for 10.32.179.110 at 2012-10-10 16:17:54 +0800
+Processing by QueryController#index as HTML
+  Parameters: {"url"=>"http://tu.7k7k.com/games/scene/531949.html"}
+WARNING: Can't verify CSRF token authenticity
+Redirected to http://10.250.13.10/
+Completed 302 Found in 2ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 10.32.179.110 at 2012-10-10 16:17:54 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query/index" for 10.32.179.110 at 2012-10-10 16:18:01 +0800
+Processing by QueryController#index as HTML
+  Parameters: {"url"=>"http://tu.7k7k.com/games/scene/531949.html"}
+WARNING: Can't verify CSRF token authenticity
+Redirected to http://10.250.13.10/
+Completed 302 Found in 2ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.32.179.110 at 2012-10-10 16:18:01 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query/index" for 10.32.179.110 at 2012-10-10 16:19:00 +0800
+Processing by QueryController#index as HTML
+  Parameters: {"url"=>"http://news.7k7k.com/hot/xin/w/532022.html"}
+WARNING: Can't verify CSRF token authenticity
+Redirected to http://10.250.13.10/
+Completed 302 Found in 2ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 10.32.179.110 at 2012-10-10 16:19:00 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query/index" for 10.32.179.110 at 2012-10-10 16:21:18 +0800
+Processing by QueryController#index as HTML
+  Parameters: {"url"=>"http://news.7k7k.com/hot/xin/w/532022.html"}
+WARNING: Can't verify CSRF token authenticity
+Redirected to http://10.250.13.10/
+Completed 302 Found in 2ms (ActiveRecord: 0.8ms)
+[2012-10-11 14:43:40] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-11 14:43:40] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-11 14:43:41] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-11 14:43:41] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-11 14:45:06] INFO  going to shutdown ...
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:24:in `shutdown': undefined method `shutdown' for nil:NilClass (NoMethodError)
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/server.rb:259:in `block in start'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:24:in `call'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:24:in `initialize'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:24:in `initialize'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:24:in `method_missing'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:24:in `shutdown'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/server.rb:259:in `block in start'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/server.rb:320:in `call'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/server.rb:320:in `block in write_pid'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:24:in `shutdown': undefined method `shutdown' for nil:NilClass (NoMethodError)
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/server.rb:259:in `block in start'
+	from /usr/local/lib/ruby/1.9.1/webrick/server.rb:121:in `call'
+	from /usr/local/lib/ruby/1.9.1/webrick/server.rb:121:in `join'
+	from /usr/local/lib/ruby/1.9.1/webrick/server.rb:121:in `block (2 levels) in start'
+	from /usr/local/lib/ruby/1.9.1/webrick/server.rb:121:in `each'
+	from /usr/local/lib/ruby/1.9.1/webrick/server.rb:121:in `block in start'
+	from /usr/local/lib/ruby/1.9.1/webrick/server.rb:22:in `start'
+	from /usr/local/lib/ruby/1.9.1/webrick/server.rb:89:in `start'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:13:in `run'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/server.rb:265:in `start'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.6/lib/rails/commands/server.rb:70:in `start'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.6/lib/rails/commands.rb:55:in `block in <top (required)>'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.6/lib/rails/commands.rb:50:in `tap'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.6/lib/rails/commands.rb:50:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+<internal:prelude>:7:in `<class:Mutex>': Interrupt
+	from <internal:prelude>:1:in `<compiled>'
+[2012-10-11 19:34:29] INFO  WEBrick 1.3.1
+[2012-10-11 19:34:29] INFO  ruby 1.9.3 (2012-04-20) [x86_64-linux]
+[2012-10-11 19:34:29] INFO  WEBrick::HTTPServer#start: pid=1619 port=80
+[2012-10-11 19:36:44] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-11 19:38:10] INFO  going to shutdown ...
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:24:in `shutdown': undefined method `shutdown' for nil:NilClass (NoMethodError)
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/server.rb:259:in `block in start'
+	from /usr/local/lib/ruby/1.9.1/webrick/log.rb:58:in `call'
+	from /usr/local/lib/ruby/1.9.1/webrick/log.rb:58:in `write'
+	from /usr/local/lib/ruby/1.9.1/webrick/log.rb:58:in `<<'
+	from /usr/local/lib/ruby/1.9.1/webrick/log.rb:58:in `log'
+	from /usr/local/lib/ruby/1.9.1/webrick/log.rb:133:in `log'
+	from /usr/local/lib/ruby/1.9.1/webrick/log.rb:75:in `info'
+	from /usr/local/lib/ruby/1.9.1/webrick/server.rb:120:in `block in start'
+	from /usr/local/lib/ruby/1.9.1/webrick/server.rb:22:in `start'
+	from /usr/local/lib/ruby/1.9.1/webrick/server.rb:89:in `start'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:13:in `run'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/server.rb:265:in `start'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.6/lib/rails/commands/server.rb:70:in `start'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.6/lib/rails/commands.rb:55:in `block in <top (required)>'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.6/lib/rails/commands.rb:50:in `tap'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.6/lib/rails/commands.rb:50:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+[2012-10-11 19:38:16] INFO  WEBrick 1.3.1
+[2012-10-11 19:38:16] INFO  ruby 1.9.3 (2012-04-20) [x86_64-linux]
+[2012-10-11 19:38:16] INFO  WEBrick::HTTPServer#start: pid=3345 port=80
+[2012-10-11 19:38:18] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-11 19:39:30] INFO  going to shutdown ...
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:24:in `shutdown': undefined method `shutdown' for nil:NilClass (NoMethodError)
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/server.rb:259:in `block in start'
+	from /usr/local/lib/ruby/1.9.1/webrick/server.rb:121:in `call'
+	from /usr/local/lib/ruby/1.9.1/webrick/server.rb:121:in `join'
+	from /usr/local/lib/ruby/1.9.1/webrick/server.rb:121:in `block (2 levels) in start'
+	from /usr/local/lib/ruby/1.9.1/webrick/server.rb:121:in `each'
+	from /usr/local/lib/ruby/1.9.1/webrick/server.rb:121:in `block in start'
+	from /usr/local/lib/ruby/1.9.1/webrick/server.rb:22:in `start'
+	from /usr/local/lib/ruby/1.9.1/webrick/server.rb:89:in `start'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:13:in `run'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/server.rb:265:in `start'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.6/lib/rails/commands/server.rb:70:in `start'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.6/lib/rails/commands.rb:55:in `block in <top (required)>'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.6/lib/rails/commands.rb:50:in `tap'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.6/lib/rails/commands.rb:50:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+=> Booting WEBrick
+=> Rails 3.2.6 application starting in production on http://0.0.0.0:80
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+
+
+Started GET "/" for 10.32.164.41 at 2012-10-11 19:38:18 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 23ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query/index" for 10.32.164.41 at 2012-10-11 19:38:22 +0800
+Processing by QueryController#index as HTML
+  Parameters: {"url"=>"http://www.meishichina.com"}
+WARNING: Can't verify CSRF token authenticity
+Redirected to http://10.250.13.10/
+Completed 302 Found in 59ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 10.32.164.41 at 2012-10-11 19:38:22 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query/index" for 10.32.164.41 at 2012-10-11 19:38:26 +0800
+Processing by QueryController#index as HTML
+  Parameters: {"url"=>"http://www.meishichina.com/"}
+WARNING: Can't verify CSRF token authenticity
+Redirected to http://10.250.13.10/
+Completed 302 Found in 2ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.32.164.41 at 2012-10-11 19:38:26 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+Exiting
+[2012-10-11 19:39:36] INFO  WEBrick 1.3.1
+[2012-10-11 19:39:36] INFO  ruby 1.9.3 (2012-04-20) [x86_64-linux]
+[2012-10-11 19:39:36] INFO  WEBrick::HTTPServer#start: pid=4076 port=80
+[2012-10-12 10:11:58] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2012-10-12 11:50:42] INFO  going to shutdown ...
+[2012-10-12 11:50:42] INFO  WEBrick::HTTPServer#start done.
+=> Booting WEBrick
+=> Rails 3.2.6 application starting in production on http://0.0.0.0:80
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+
+
+Started GET "/" for 10.32.164.41 at 2012-10-11 19:39:37 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query/site" for 10.32.164.41 at 2012-10-11 19:39:41 +0800
+Processing by QueryController#site as HTML
+  Parameters: {"site"=>"zongheng.com"}
+WARNING: Can't verify CSRF token authenticity
+  Rendered query/site.html.erb within layouts/application (90161.8ms)
+Completed 200 OK in 102083ms (Views: 90511.1ms | ActiveRecord: 1835.6ms)
+
+
+Started GET "/" for 10.32.164.41 at 2012-10-12 10:11:54 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query/site" for 10.32.164.41 at 2012-10-12 10:15:02 +0800
+Processing by QueryController#site as HTML
+  Parameters: {"site"=>"zbdyb.com"}
+WARNING: Can't verify CSRF token authenticity
+Redirected to http://10.250.13.10/
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 10.32.164.41 at 2012-10-12 10:15:02 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query/site" for 10.32.164.41 at 2012-10-12 10:52:48 +0800
+Processing by QueryController#site as HTML
+  Parameters: {"site"=>"admin5.com"}
+WARNING: Can't verify CSRF token authenticity
+Redirected to http://10.250.13.10/
+Completed 302 Found in 2ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 10.32.164.41 at 2012-10-12 10:52:48 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/query/site" for 10.32.164.41 at 2012-10-12 10:53:34 +0800
+Processing by QueryController#site as HTML
+  Parameters: {"site"=>"meishichina.com"}
+WARNING: Can't verify CSRF token authenticity
+  Rendered query/site.html.erb within layouts/application (1570980.3ms)
+Completed 200 OK in 1879720ms (Views: 1571107.0ms | ActiveRecord: 73065.4ms)
+Exiting
