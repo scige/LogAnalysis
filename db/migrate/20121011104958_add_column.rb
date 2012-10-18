@@ -3,6 +3,7 @@ class AddColumn < ActiveRecord::Migration
       add_column :log_data, :req_ip, :string
       add_column :log_data, :stat_in_cache, :boolean
       add_column :log_data, :stat_thumbnail_size, :integer
+      add_column :log_data, :stat_filtered_num, :integer
       rename_column :log_data, :stat_return_size, :stat_candidate_size
   end
 end

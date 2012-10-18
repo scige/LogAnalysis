@@ -73,7 +73,19 @@
             <td><%= @log_data.req_bucketId %></td>
             <td>bucket id</td>
         </tr>
+
+        <tr>
+            <td><b>req_ip:</b></td>
+            <td><%= @log_data.req_ip %></td>
+            <td>用户ip</td>
+        </tr>
     
+        <tr>
+            <td><b>stat_in_cache:</b></td>
+            <td><%= @log_data.stat_in_cache %></td>
+            <td>是否命中Cache</td>
+        </tr>
+
         <tr>
             <td><b>stat_behaviour_size:</b></td>
             <td><%= @log_data.stat_behaviour_size %></td>
@@ -165,9 +177,21 @@
         </tr>
     
         <tr>
-            <td><b>stat_return_size:</b></td>
-            <td><%= @log_data.stat_return_size %></td>
+            <td><b>stat_candidate_size:</b></td>
+            <td><%= @log_data.stat_candidate_size %></td>
             <td>候选结果数目</td>
+        </tr>
+
+        <tr>
+            <td><b>stat_thumbnail_size:</b></td>
+            <td><%= @log_data.stat_thumbnail_size %></td>
+            <td>候选结果数目</td>
+        </tr>
+
+        <tr>
+            <td><b>stat_filtered_num:</b></td>
+            <td><%= @log_data.stat_filtered_num %></td>
+            <td>封禁结果数目</td>
         </tr>
     
         <tr>
